@@ -1,8 +1,11 @@
-# React + Vite
+# CyberDost React Code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Steps to clone the code:
 
-Currently, two official plugins are available:
+1. Make sure you have npm installed. You can check it by typing npm --version in terminal.
+2. Git clone the repo.
+3. Change current teminal dirctory to cyberdostreact
+4. Type npm install in terminal.
+5. To run type npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Note: pls do git fetch the repo regularly to avoid merge conflicts
