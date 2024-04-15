@@ -1,13 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import Home from './components/pages/Home';
+import News from './components/pages/News';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-
   return (
-    <div className='text-blue-500'>App</div>
-  )
+    <Router>
+      <div className='w-full'>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/news' element={<News />} />
+          {/* Add more routes here */}
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
