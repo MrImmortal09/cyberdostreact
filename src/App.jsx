@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './components/pages/Home';
 import News from './components/pages/News';
+import Login from './components/pages/Login';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/news' element={<News />} />
+          <Route exact path='/login' element={<Login />} />
           {/* Add more routes here */}
         </Routes>
       </div>
