@@ -2,6 +2,12 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
 import React, { useState } from 'react';
 
+// username = omswami2004
+// password = OmSwami@2004
+
+
+
+
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
