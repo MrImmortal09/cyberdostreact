@@ -9,10 +9,10 @@ import {
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
+    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300 bg-zinc-800'>
       <div>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
-        <p className='py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.</p>
+        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>CYBERDOST</h1>
+        <p className='py-4'>Your one stop destination for all things cyber-crime related.</p>
         <div className='flex justify-between md:w-[75%] my-6'>
             <FaFacebookSquare size={30} />
             <FaInstagram size={30} />
@@ -21,7 +21,7 @@ const Footer = () => {
             <FaDribbbleSquare size={30} />
         </div>
       </div>
-      <div className='lg:col-span-2 flex justify-between mt-6'>
+      <div className='lg:col-span-2 flex justify-end mt-6'>
     <div>
         <h6 className='font-medium text-gray-400'>Solutions</h6>
         <ul>
@@ -31,7 +31,8 @@ const Footer = () => {
             <li className='py-2 text-sm'>Insights</li>
         </ul>
     </div>
-    <div>
+    <div className='w-20'></div>
+    {/* <div>
         <h6 className='font-medium text-gray-400'>Support</h6>
         <ul>
             <li className='py-2 text-sm'>Pricing</li>
@@ -39,7 +40,7 @@ const Footer = () => {
             <li className='py-2 text-sm'>Guides</li>
             <li className='py-2 text-sm'>API Status</li>
         </ul>
-    </div>
+    </div> */}
     <div>
         <h6 className='font-medium text-gray-400'>Company</h6>
         <ul>
@@ -50,14 +51,14 @@ const Footer = () => {
             <li className='py-2 text-sm'>Careers</li>
         </ul>
     </div>
-    <div>
+    {/* <div>
         <h6 className='font-medium text-gray-400'>Legal</h6>
         <ul>
             <li className='py-2 text-sm'>Claim</li>
             <li className='py-2 text-sm'>Policy</li>
             <li className='py-2 text-sm'>Terms</li>
         </ul>
-    </div>
+    </div> */}
       </div>
     </div>
   );
