@@ -1,9 +1,13 @@
 // News.jsx
 import React from 'react';
+import Navbar from '../navbar';
+import Footer from '../footer';
 
 function News() {
   return (
-    <div className='w-full bg-zinc-900 min-h-screen flex flex-col justify-start items-start px-32 py-8'>
+    <div>
+      {/* <Navbar /> */}
+    <div className='w-full bg-zinc-900 min-h-screen flex flex-col justify-start items-start px-32'>
       <div className='w-full h-20'></div>
       <div className='text-white text-lg'>Feat/ Fraud Types</div>
       <div className='w-full flex flex-col justify-center items-center mt-16 gap-6'>
@@ -62,7 +66,71 @@ function News() {
 
       <div className='w-full text-center text-white mt-24 text-4xl font-semibold'>Stay Updated with Cyber</div>
 
+      <div className='w-full flex justify-center items-center gap-8 mt-16 '>
+        <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
+          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
+          <div className='flex justify-start items-center mt-8 gap-6 px-4'>
+              <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
+              <div className='text-white text-md font-medium'>CyberD</div>
+            </div>
+        </div>
+        <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
+          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
+          <div className='flex justify-start items-center mt-8 gap-6 px-4'>
+              <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
+              <div className='text-white text-md font-medium'>CyberD</div>
+            </div>
+        </div>
+        <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
+          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
+          <div className='flex justify-start items-center mt-8 gap-6 px-4'>
+              <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
+              <div className='text-white text-md font-medium'>CyberD</div>
+            </div>
+        </div>
+      </div>
+      <div className='w-full flex justify-center items-center gap-8 mt-16 '>
+        <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
+          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
+          <div className='flex justify-start items-center mt-8 gap-6 px-4'>
+              <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
+              <div className='text-white text-md font-medium'>CyberD</div>
+            </div>
+        </div>
+        <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
+          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
+          <div className='flex justify-start items-center mt-8 gap-6 px-4'>
+              <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
+              <div className='text-white text-md font-medium'>CyberD</div>
+            </div>
+        </div>
+        <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
+          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
+          <div className='flex justify-start items-center mt-8 gap-6 px-4'>
+              <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
+              <div className='text-white text-md font-medium'>CyberD</div>
+            </div>
+        </div>
+      </div>
 
+      <div className='w-full flex justify-center items-center mt-20 mb-12'>
+      <button type='button' className='bg-black text-white w-fit h-10 rounded-full px-4 py-2 hover:bg-zinc-800'>Load More</button>
+      </div>
+
+      </div>
+      {/* <Footer /> */}
     </div>
   )
 
