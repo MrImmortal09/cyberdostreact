@@ -1,0 +1,337 @@
+/* App.css */
+
+.app {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+  }
+  
+  .panel {
+    flex: 0 0 20%;
+    background-color: #222;
+    padding: 20px;
+  }
+  
+  .panel h2 {
+    margin-bottom: 20px;
+  }
+  
+  .panel button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #444;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+  }
+  
+  .panel button:hover {
+    background-color: #444;
+    border-color: #555;
+    transform: translateY(-3px);
+  }
+  
+  
+  
+  .main {
+    flex: 0 0 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .chat {
+    flex-grow: 1;
+    overflow-y: scroll;
+  }
+  
+  .message {
+    background-color: #444;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    position: relative;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  .message.right {
+    align-self: flex-end;
+    background-color: #0084ff;
+  }
+  
+  
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Add position relative */
+    margin-bottom: 20px; /* Moved margin to bottom to separate from messages */
+  }
+  
+  .transparent-input {
+    flex-grow: 1; /*Takes up remaining space*/
+    padding: 30px;
+    margin-left: 7px;
+    border: 2px solid #bbb;
+    border-radius: 10px;
+    background-color: transparent; /* Set background to transparent */
+    color: #fff;
+    font-size: 16px;
+  
+  }
+  
+  .input-container input::placeholder {
+    color: #bbb;
+    font-size: x-large;
+  }
+  
+  .add-image {
+    position: absolute; /* Position absolute to position it beside the input */
+    left: 10px; /* Adjust left position */
+    bottom: 25px;
+    font-size: 35px;
+    cursor: pointer;
+    font-weight: 850;
+  }
+  
+  .add-image:hover::after {
+    content: "Add an image";
+    position: absolute;
+    top: -20px;
+    left: 20px; /* Adjust left position */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 70px;
+  }
+  
+  
+  
+  .emoticons {
+    display: flex;
+    margin: 10px;
+  }
+  
+  .emoticons span {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .emoticons span:hover {
+    transform: scale(1.2);
+  }
+  
+  .reply {
+    background-color: #555;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    margin-top: 10px;
+    margin-right: auto; /* Align right */
+    color: #ccc; /* Lighter color */
+  }
+  
+  
+  .send-btn {
+    padding: 15px 30px; /* Adjust padding to make it larger */
+    background-color: green; /* Set background color to green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Adjust font size */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect */
+  }
+  
+  .send-btn:hover {
+    background-color: darkgreen; /* Change background color on hover */
+  }
+  
+  .like-btn {
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .like-btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  .like-btn span {
+    margin-right: 5px;
+  }
+  
+  .profile {
+    flex: 0 0 10%; /* Adjusted profile section width */
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-end; /* Align content to the right */
+    padding: 10px; /* Adjusted padding */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+  
+  .user-profile {
+    text-align: center;
+  }
+  
+  .user-profile img {
+    width: 70px; /* Reduced profile image size */
+    height: 70px; /* Reduced profile image size */
+    border-radius: 50%;
+    margin-bottom: 5px; /* Reduced margin */
+  }
+  
+  .details {
+    display: none; /* Hide the details */
+  }
+  
+  
+  .active-dot,
+  .inactive-dot {
+    width: 8px; /* Reduced dot size */
+    height: 8px; /* Reduced dot size */
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  
+  .active-dot {
+    background-color: green;
+  }
+  
+  .inactive-dot {
+    background-color: red;
+  }
+  
+  /* Add the following CSS for reply button and chat message layout */
+  
+  .message {
+    background-color: #444;
+    padding: 10px;
+    margin-top: 10px; /* Adjusted margin */
+    margin-bottom: 10px; /* Adjusted margin */
+    border-radius: 10px;
+    max-width: 100%; /* Adjusted width to take complete space */
+    position: relative;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* New styling for the reply button */
+  .reply-btn {
+    padding: 8px 15px;
+    background-color: #ccc; /* Light grey color */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: auto; /* Move the reply button to the right */
+  }
+  
+  /* Styling for upvote and downvote buttons */
+  .reaction-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .upvote-btn,
+  .downvote-btn {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .upvote-btn:hover,
+  .downvote-btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  
+  .reply-box {
+    background-color: transparent; /* Transparent background */
+    padding: 10px;
+    border: 1px solid #fff; /* Thin white border */
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex; /* Add flex to align items */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .reply-input {
+    flex-grow: 1; /* Take up remaining space */
+    padding: 8px;
+    border: none; /* Remove border */
+    outline: none; /* Remove default outline */
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color */
+  }
+  
+  .reply-send-btn {
+    padding: 5px 10px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .reply-send-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  
+  .reply-btn.hide {
+    display: none;
+  }
+  
+  .activity-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #444;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+  }
+  
+  .activity-btn:hover {
+    background-color: #444;
+    border-color: #555;
+    transform: translateY(-3px);
+  }
+  
+  
+  
+  
+  
