@@ -27,7 +27,8 @@ function News() {
       </div>
 
       <div className='w-full h-96 bg-zinc-800 rounded-3xl mt-12 flex justify-start items-start px-12 py-8'>
-        <div className='w-[40%] h-full bg-bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'></div>
+        <div className='w-[40%] h-full'>
+        </div>
         <div className='flex-1 flex flex-col items-start justify-between pt-4'>
           <h1 className='text-white text-4xl font-semibold'>Top 5 Cyber Security Tips to Protect Yourself Online</h1>
           <p className='text-white opacity-70 mt-8 text-md'>In this article, you will find expert advice on how to stay safe and protect your personal information while browsing the internet. Implement these 5 practical and easy tips today.</p>
@@ -68,7 +69,7 @@ function News() {
 
       <div className='w-full flex justify-center items-center gap-8 mt-16 '>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
-          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 rounded-t-3xl'></div>
           <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
           <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
@@ -77,7 +78,7 @@ function News() {
             </div>
         </div>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
-          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='w-full h-[50%] bg-gradient-to-r from-cyan-500 to-blue-500 rounded-t-3xl'></div>
           <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
           <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
@@ -97,7 +98,7 @@ function News() {
       </div>
       <div className='w-full flex justify-center items-center gap-8 mt-16 '>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
-          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  rounded-t-3xl'></div>
           <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
           <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
@@ -115,7 +116,7 @@ function News() {
             </div>
         </div>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
-          <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
+          <div className='w-full h-[50%] bg-gradient-to-r from-cyan-500 to-blue-500 rounded-t-3xl'></div>
           <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
           <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
