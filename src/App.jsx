@@ -5,6 +5,7 @@ import Login from './components/pages/Login';
 import GovtMeasures from "./components/pages/GMeasures";
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import ContactUs from './components/pages/ContactUs';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path='/news' element={<News />} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path="/GovtMeasures" element={<GovtMeasures />} />
+          <Route exact path="/ContactUs" element={<ContactUs />} />
           {/* Add more routes here */}
         </Routes>
         <Footer />
