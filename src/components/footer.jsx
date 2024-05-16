@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300 bg-zinc-800'>
+    <div className='px-20 max-w-full mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300 bg-zinc-800'>
       <div>
         <h1 className='w-full text-3xl font-bold text-[#00df9a]'>CYBERDOST</h1>
         <p className='py-4'>Your one stop destination for all things cyber-crime related.</p>
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <div className='lg:col-span-2 flex justify-end mt-6'>
     <div>
-        <h6 className='font-medium text-gray-400'>Solutions</h6>
+        <h6 className='font-medium text-[#00DF9A]'>Solutions</h6>
         <ul>
             <li className='py-2 text-sm'>Analytics</li>
             <li className='py-2 text-sm'>Marketing</li>
@@ -42,7 +42,7 @@ const Footer = () => {
         </ul>
     </div> */}
     <div>
-        <h6 className='font-medium text-gray-400'>Company</h6>
+        <h6 className='font-medium text-[#00DF9A]'>Company</h6>
         <ul>
             <li className='py-2 text-sm'>About</li>
             <li className='py-2 text-sm'>Blog</li>

@@ -9,12 +9,12 @@ import Newsletter from '../Newsletter';
 function App() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Analytics />
       <Newsletter />
       <Cards />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      <Link to="/" className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</Link> {/* Home link */}
+    <div className='px-20 bg-zinc-900 flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white'>
+      <Link to="/" className='w-full text-3xl font-bold text-[#00df9a]'>CYBERDOST</Link> {/* Home link */}
       <ul className='hidden md:flex'>
         <li className='p-4'><Link to="/">Home</Link></li> {/* Home link */}
         <li className='p-4'><Link to="/forum">Forum</Link></li> {/* Company link */}
