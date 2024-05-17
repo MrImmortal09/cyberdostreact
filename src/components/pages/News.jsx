@@ -2,8 +2,33 @@
 import React from 'react';
 import Navbar from '../navbar';
 import Footer from '../footer';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function News() {
+
+  const [news, setNews] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true); // State to manage loading
+
+  useEffect(() => {
+    axios.get('http://localhost:8080/news')
+      .then(response => {
+        console.log('Response data:', response.data); // Log the response data
+        setNews(response.data);
+        setLoading(false); // Set loading to false once data is fetched
+      })
+      .catch(error => {
+        console.error('Error fetching data: ', error);
+        setError('Error fetching data: ' + error.message);
+        setLoading(false); // Set loading to false on error
+      });
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>; // Show a loading message while fetching data
+  }
+
   return (
     <div>
       {/* <Navbar /> */}
@@ -44,22 +69,22 @@ function News() {
         <div className='w-1/2 h-80 bg-zinc-800 rounded-3xl mt-12 flex justify-start items-start px-12 py-8'>
           <div className='w-[40%] h-full bg-bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'></div>
           <div className='flex-1 flex flex-col items-start justify-between pt-4'>
-            <h1 className='text-white text-3xl font-semibold'>10 Common Cyber Frauds and How to Avoid Them</h1>
+            <h1 className='text-white text-3xl font-semibold'>{news[7].title}</h1>
             <p className='text-white opacity-70 mt-8 text-md'>Stay informed about the latest cyber frauds and learn how to protect yourself from becoming a victim. Knowledge is the best defense against online scams.</p>
             <div className='flex justify-start items-center mt-8 gap-6'>
               <div className='w-12 h-12 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
-              <div className='text-white text-md font-medium'>CyberD</div>
+              <a href={news[7].url} className='text-white text-md font-medium'>See full Article</a>
             </div>
           </div>
         </div>
         <div className='w-1/2 h-80 bg-zinc-800 rounded-3xl mt-12 flex justify-start items-start px-12 py-8'>
           <div className='w-[40%] h-full bg-bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'></div>
           <div className='flex-1 flex flex-col items-start justify-between pt-4'>
-            <h1 className='text-white text-3xl font-semibold'>Understanding Different Types of Online Scams</h1>
+            <h1 className='text-white text-3xl font-semibold'>DarkTrace private $5billion scam</h1>
             <p className='text-white opacity-70 mt-8 text-md'>Get insights into various online scams and learn how to recognize and avoid them. Protect your hard-earned money and personal information from cyber criminals.</p>
             <div className='flex justify-start items-center mt-8 gap-6'>
               <div className='w-12 h-12 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
-              <div className='text-white text-md font-medium'>CyberD</div>
+              <a href={news[6].url} className='text-white text-md font-medium'>See full Article</a>
             </div>
           </div>
         </div>
@@ -70,58 +95,58 @@ function News() {
       <div className='w-full flex justify-center items-center gap-8 mt-16 '>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
           <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 rounded-t-3xl'></div>
-          <div className='text-white text-2xl px-4 font-semibold py-2'>Latest Cyber Fraud News and Updates</div>
-          <div className='text-white opacity-70 px-4 py-2 text-sm'>Get the latest news and updates about cyber frauds happening around the world. Stay informed and protect yourself from online threats.</div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>{news[0].title}</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>{news[0].description}</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
               <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
-              <div className='text-white text-md font-medium'>CyberD</div>
+              <a href={news[0].url} className='text-white text-md font-medium'>See full Article</a>
             </div>
         </div>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
           <div className='w-full h-[50%] bg-gradient-to-r from-cyan-500 to-blue-500 rounded-t-3xl'></div>
-          <div className='text-white text-2xl px-4 font-semibold py-2'>Cyber Security Tips for a Safe Online Experience</div>
-          <div className='text-white opacity-70 px-4 py-2 text-sm'>Explore simple yet effective cyber security tips to safeguard your online presence and protect your sensitive information.</div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>{news[1].title}</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>{news[1].description}</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
               <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
-              <div className='text-white text-md font-medium'>CyberD</div>
+              <a href={news[1].url} className='text-white text-md font-medium'>See full Article</a>
             </div>
         </div>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
           <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
-          <div className='text-white text-2xl px-4 font-semibold py-2'>How to Report Cyber Fraud and Seek Help</div>
-          <div className='text-white opacity-70 px-4 py-2 text-sm'>Learn the steps to report cyber fraud incidents and find support from authorities. Together, we can fight against cyber criminals.</div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>{news[2].title}</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>{news[2].description}</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
               <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
-              <div className='text-white text-md font-medium'>CyberD</div>
+              <a href={news[2].url} className='text-white text-md font-medium'>See full Article</a>
             </div>
         </div>
       </div>
       <div className='w-full flex justify-center items-center gap-8 mt-16 '>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
           <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  rounded-t-3xl'></div>
-          <div className='text-white text-2xl px-4 font-semibold py-2'>Protect Your Online Identity from Cyber Criminals</div>
-          <div className='text-white opacity-70 px-4 py-2 text-sm'>Understand the pros and cons of different online identity protection measures and secure your digital presence.</div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>{news[3].title}</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>{news[3].description}</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
               <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
-              <div className='text-white text-md font-medium'>CyberD</div>
+<a href={news[3].url} className='text-white text-md font-medium'>See full Article</a>
             </div>
         </div>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
           <div className='w-full h-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-3xl'></div>
-          <div className='text-white text-2xl px-4 font-semibold py-2'>How to Stay Safe from Phishing Attacks</div>
-          <div className='text-white opacity-70 px-4 py-2 text-sm'>Learn how to identify and protect yourself from phishing attacks, one of the most common cyber fraud techniques used by scammers.</div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>{news[4].title}</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>{news[4].description}</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
               <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
-              <div className='text-white text-md font-medium'>CyberD</div>
+<a href={news[4].url} className='text-white text-md font-medium'>See full Article</a>
             </div>
         </div>
         <div className='w-[30%] h-96 bg-zinc-800 rounded-3xl flex flex-col justify-start items-start'>
           <div className='w-full h-[50%] bg-gradient-to-r from-cyan-500 to-blue-500 rounded-t-3xl'></div>
-          <div className='text-white text-2xl px-4 font-semibold py-2'>Online Shopping Safety Tips to Avoid Cyber Fraud</div>
-          <div className='text-white opacity-70 px-4 py-2 text-sm'>Discover essential tips to ensure a safe online shopping experience and protect your financial information from cyber criminals.</div>
+          <div className='text-white text-2xl px-4 font-semibold py-2'>{news[5].title}</div>
+          <div className='text-white opacity-70 px-4 py-2 text-sm'>{news[5].description}</div>
           <div className='flex justify-start items-center mt-8 gap-6 px-4'>
               <div className='w-8 h-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full '></div>
-              <div className='text-white text-md font-medium'>CyberD</div>
+<a href={news[5].url} className='text-white text-md font-medium'>See full Article</a>
             </div>
         </div>
       </div>
