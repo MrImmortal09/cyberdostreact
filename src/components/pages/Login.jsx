@@ -1,6 +1,7 @@
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import welcomeCats from '../../assets/undraw_welcome_cats_thqn.svg';
 
 // username = omswami2004
@@ -116,12 +117,12 @@ const Login = () => {
         </div>
         <div className="mt-4 font-semibold text-sm text-slate-500 text-center md:text-left">
           Don&apos;t have an account?{" "}
-          <a
+          <Link
+            to="/SignUp"
             className="text-[#00DF9A] hover:underline hover:underline-offset-4 hover:text-blue-700"
-            href="/SignUp.jsx"
           >
             Register
-          </a>
+          </Link>
         </div>
       </div>
     </section>
