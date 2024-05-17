@@ -1,14 +1,14 @@
 import React from 'react';
 import '../../Forum.css';
-import Header from '../Header';
+// import Header from '../Header';
 import Trending from '../Trending';
 import Posts from '../Posts'; 
 import Sidebar from '../Sidebar';
 
-function App() {
+function Forum() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div id="main">
         <Trending />
         <div id="content">
@@ -20,4 +20,4 @@ function App() {
   );
 };
 
-export default App;
+export default Forum;
