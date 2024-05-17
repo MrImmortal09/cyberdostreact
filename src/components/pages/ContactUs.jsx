@@ -10,14 +10,14 @@ const ContactUs = () => {
                     GET IN TOUCH WITH US
                   </h1>
                   <p className="text-body-color mb-9 text-base leading-relaxed text-white">
-                    Contact our customer-service team from 8-6, Monday-Friday for
-                    white-glove service, including detailed assistance with:
+                    Contact our customer-service team for
+                    cyber service, including detailed assistance with:
                     <ul className="p-0">
-                      <li>Shopping</li>
+                      <li>Threat Mitigation</li>
                       <li>Account Creation</li>
-                      <li> Product Information</li>
+                      <li>Website Information</li>
                       <li>Site Navigation</li>
-                      <li>Deliveries And more!</li>
+                      <li>Reporting And more!</li>
                     </ul>
                   </p>
                   <div className="mb-8 flex w-full max-w-[370px]">
