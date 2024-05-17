@@ -1,0 +1,52 @@
+.nav {
+    height: 14vh;
+    width: 95vw;
+    margin: auto;
+    border-bottom: 0.4px solid snow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: snow;
+    font-size: 2.5rem;
+  }
+  
+  .ul1 {
+    text-decoration: none;
+    color: snow;
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .anchor {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .li1 {
+    font-size: larger;
+    margin-left: 2vw;
+  }
+  
+  li:hover {
+    transform: scale(1.05);
+  }
+  
+  button {
+    text-decoration: none;
+    padding: 1vw 1vw;
+    color: snow;
+    background: black;
+    font-size: 16px;
+    border-radius: 8vw;
+    border: none;
+    transition: 0.2s linear;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0.5px 0.5px 1.5px snow;
+  }
+  
