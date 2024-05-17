@@ -18,8 +18,9 @@ const LoginForm = () => {
       });
 
       if (!response.ok) {
-        const errorMessage = await response.text();
-        throw new Error(errorMessage);
+        // const errorMessage = await response.text();
+        // throw new Error(errorMessage);
+        throw new Error(`Incorrect credentials, please try again!`);
       }
 
       // Redirect or do something upon successful login

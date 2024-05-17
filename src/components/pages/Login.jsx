@@ -1,6 +1,7 @@
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
 import React, { useState } from 'react';
+import welcomeCats from '../../assets/undraw_welcome_cats_thqn.svg';
 
 // username = omswami2004
 // password = OmSwami@2004
@@ -43,10 +44,10 @@ const Login = () => {
 
 
   return (
-    <section className="h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
+    <section className="text-white bg-zinc-900 h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
       <div className="md:w-1/3 max-w-sm">
         <img
-          src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          src={welcomeCats}
           alt="Sample image"
         />
       </div>
@@ -55,7 +56,7 @@ const Login = () => {
           <label className="mr-1">Sign in with</label>
           <button
             type="button"
-            className="mx-1 h-9 w-9  rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-[0_4px_9px_-4px_#3b71ca]"
+            className="mx-1 h-9 w-9  rounded-full hover:bg-blue-700 text-white shadow-[0_4px_9px_-4px_#00DF9A]"
           >
             <BiLogoFacebook
               size={20}
@@ -64,7 +65,7 @@ const Login = () => {
           </button>
           <button
             type="button"
-            className="inlne-block mx-1 h-9 w-9 rounded-full bg-blue-600 hover:bg-blue-700 uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca]"
+            className="inlne-block mx-1 h-9 w-9 rounded-full hover:bg-blue-700 uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#00DF9A]"
           >
             <AiOutlineTwitter
               size={20}
@@ -97,7 +98,7 @@ const Login = () => {
             <span>Remember Me</span>
           </label>
           <a
-            className="text-blue-600 hover:text-blue-700 hover:underline hover:underline-offset-4"
+            className="text-[#00DF9A] hover:text-blue-700 hover:underline hover:underline-offset-4"
             href="#"
           >
             Forgot Password?
@@ -105,7 +106,7 @@ const Login = () => {
         </div>
         <div className="text-center md:text-left">
           <button
-            className="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded text-xs tracking-wider"
+            className="mt-4 bg-[#00DF9A] hover:bg-blue-700 px-4 py-2 uppercase rounded text-xs tracking-wider"
             type="submit"
             onClick={handleLogin}
           >
@@ -116,8 +117,8 @@ const Login = () => {
         <div className="mt-4 font-semibold text-sm text-slate-500 text-center md:text-left">
           Don&apos;t have an account?{" "}
           <a
-            className="text-red-600 hover:underline hover:underline-offset-4"
-            href="#"
+            className="text-[#00DF9A] hover:underline hover:underline-offset-4 hover:text-blue-700"
+            href="/SignUp.jsx"
           >
             Register
           </a>
