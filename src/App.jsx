@@ -2,8 +2,9 @@ import './App.css';
 import Home from './components/pages/Home';
 import News from './components/pages/News';
 import Login from './components/pages/Login';
+import SignUp from './components/pages/SignUp';
 import GovtMeasures from "./components/pages/GMeasures";
-// import Forum from "./components/pages/Forum";
+import Forum from "./components/pages/Forum";
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import ContactUs from './components/pages/ContactUs';
@@ -20,7 +21,8 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path="/GovtMeasures" element={<GovtMeasures />} />
           <Route exact path="/ContactUs" element={<ContactUs />} />
-          {/* <Route exact path="/Forum" element={<Forum />} /> */}
+          <Route exact path="/Forum" element={<Forum />} />
+          <Route exact path="/SignUp" element={<SignUp />} />
           {/* Add more routes here */}
         </Routes>
         <Footer />
