@@ -16,38 +16,26 @@ const Navbar = () => {
         <div className="list">
           <ul className="ul1">
             <li className="li1">
-              <a className="anchor" href="Home.html">
-                Home
-              </a>
+            <Link to="/">Home</Link>{/* Contact link */}
             </li>
             <li className="li1">
-              <a className="anchor" href="News.html">
-                News
-              </a>
+            <Link to="/news">News</Link>{/* Contact link */}
             </li>
             <li className="li1">
-              <a className="anchor" href="Measures.html">
-                Measures
-              </a>
+            <Link to="/GovtMeasures">Measures</Link>{/* Contact link */}
             </li>
             <li className="li1">
-              <a className="anchor" href="Forum.html">
-                Forum
-              </a>
+            <Link to="/forum">Forum</Link>{/* Contact link */}
             </li>
-            <li className="li1">
-              <a className="anchor" href="ContactUs.html">
-                Login
-              </a>
-            </li>
+            
           </ul>
         </div>
         <div className="search">
           <a href="Login.html">
-            <button>Login</button>
+            <button><Link to="/login">Login</Link>{/* Contact link */}</button>
           </a>
           <a href="Login.html">
-            <button>Signup</button>
+          <button><Link to="/signup">Signup</Link>{/* Contact link */}</button>
           </a>
         </div>
       </div>
