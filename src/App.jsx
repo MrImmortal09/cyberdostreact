@@ -3,6 +3,7 @@ import Home from './components/pages/Home';
 import News from './components/pages/News';
 import Login from './components/pages/Login';
 import GovtMeasures from "./components/pages/GMeasures";
+import Signup from './components/pages/SignUp';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -15,6 +16,7 @@ function App() {
           <Route exact path='/news' element={<News />} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path="/GovtMeasures" element={<GovtMeasures />} />
+          <Route exact path="/signup" element={<Signup />} />
           
           {/* Add more routes here */}
         </Routes>

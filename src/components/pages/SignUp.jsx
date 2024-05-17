@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
 
-const Login = () => {
+const Signup = () => {
   return (
     <section className="h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
       <div className="md:w-1/3 max-w-sm">
@@ -82,4 +82,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
