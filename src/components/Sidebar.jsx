@@ -31,16 +31,16 @@ const Sidebar = () => {
                     <i class="far fa-user-circle"></i>
                     <span class="name">r/randomUser</span>
                 </div>
-                <div class="view-all">View All</div>
-                <div class="buttons">
+                <div class="view-all mb-3">View All</div>
+                {/* <div class="buttons">
                     <div class="sports">Sports</div>
                     <div class="news">News</div>
                     <div class="gaming">Gaming</div>
                     <div class="aww">Aww</div>
-                </div>
+                </div> */}
             </div>
             
-            <div id='trending_communities' class="side-section trending-communities" >
+            {/* <div id='trending_communities' class="side-section trending-communities" >
                 <div class="section-head">
                     <span class="title">Trending communities</span>
                 </div>
@@ -84,9 +84,9 @@ const Sidebar = () => {
                     </div>
                     <div class="community-join">Join</div>
                 </div>
-            </div>
+            </div> */}
            
-            <div id="side_footer" class="side-section">
+            {/* <div id="side_footer" class="side-section">
                 <div id="left_list">
                     <ul>
                         <li>Help</li>
@@ -110,7 +110,7 @@ const Sidebar = () => {
                     </ul>
                 </div>
                 <span>Made to help on global front</span>
-            </div>
+            </div> */}
     </div>
   );
 };

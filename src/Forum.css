@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #2b2c2d;
+    background-color: #18181b;
 }
 
 header {
@@ -95,9 +95,9 @@ header {
 
 #main {
     margin: auto;
-    margin-top: 80px;
+    margin-top: 20px;
     width: 60%;
-    height: 100vh;
+    height: 90vh;
 }
 
 #content {
