@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <div className="w-full">
+        <Navbar />
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/news' element={<News />} />
@@ -20,6 +21,7 @@ function App() {
           
           {/* Add more routes here */}
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

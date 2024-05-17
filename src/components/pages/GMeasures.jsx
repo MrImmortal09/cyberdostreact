@@ -5,11 +5,11 @@ function GMeasures() {
   return (
     <div className="text-white w-full h-auto bg-zinc-900 p-12 md:24 flex flex-col flex-wrap gap-24">
       <div className="flex justify-center items-center">
-        <p className="text-[#FFFFFF] pt-12 text-4xl md:text-6xl lg:text-7xl">
+        <p className="text-[#00DF9A] pt-5 text-4xl md:text-6xl lg:text-7xl">
           Government Measures
         </p>
       </div>
-      <div className="flex flex-wrap justify-around mt-12 gap-9">
+      <div className="flex flex-wrap justify-around gap-5">
         <GovtCard
           title="CITIZEN MANUAL"
           desc="It is a document to describe the functionalities and workflow that is provided to citizens on the cybercrime portal for reporting cybercrimes."
@@ -35,7 +35,7 @@ function GMeasures() {
           buttonLink="https://cybercrime.gov.in/Webform/dailyDigest.aspx"
         />
       </div>
-      <div className="flex flex-wrap justify-around mt-12 gap-9">
+      <div className="flex flex-wrap justify-around mb-12 gap-5">
         <GovtCard
           title="CITIZEN MANUAL"
           desc="It is a document to describe the functionalities and workflow that is provided to citizens on the cybercrime portal for reporting cybercrimes."

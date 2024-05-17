@@ -4,29 +4,17 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <div className="nav">
-      <div className="logo">Cyberdost</div>
-      <div className="list">
-        <ul className="ul1">
-          <li className="li1">
-            <NavLink to="/" className="anchor">Home</NavLink>
-          </li>
-          <li className="li1">
-            <NavLink to="/news" className="anchor">News</NavLink>
-          </li>
-          <li className="li1">
-            <NavLink to="/GovtMeasures" className="anchor">Measures</NavLink>
-          </li>
-          <li className="li1">
-            <NavLink to="/forum" className="anchor">Forum</NavLink>
-          </li>
-          <li className="li1">
-            <NavLink to="/login" className="anchor">Login</NavLink>
-          </li>
-          <li className="li1">
-            <NavLink to="/signup" className="anchor">Sign up</NavLink>
-          </li>
-        </ul>
+    <div className='px-20 bg-zinc-900 flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white'>
+      <Link to="/" className='w-full text-3xl font-bold text-[#00df9a]'>CYBERDOST</Link> {/* Home link */}
+      <ul className='hidden md:flex'>
+        <li className='p-4'><Link to="/">Home</Link></li> {/* Home link */}
+        <li className='p-4'><Link to="/forum">Forum</Link></li> {/* Company link */}
+        <li className='p-4'><Link to="/news">News</Link></li> {/* Resources link */}
+        <li className='p-4'><Link to="/GovtMeasures">Measures</Link></li> {/* About link */}
+        <li className='p-4'><Link to="/login">Login</Link></li> {/* Contact link */}
+      </ul>
+      <div onClick={handleNav} className='block md:hidden'>
+          {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
       </div>
     </div>
   );
