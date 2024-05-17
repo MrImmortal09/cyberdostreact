@@ -1,6 +1,7 @@
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import welcomeCats from '../../assets/undraw_welcome_cats_thqn.svg';
 
 // username = omswami2004
@@ -44,7 +45,7 @@ const Login = () => {
 
 
   return (
-    <section className="text-white bg-zinc-900 h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
+    <section className="text-white bg-zinc-900 h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0 justify-between px-48">
       <div className="md:w-1/3 max-w-sm">
         <img
           src={welcomeCats}
@@ -79,14 +80,14 @@ const Login = () => {
           </p>
         </div>
         <input
-          className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded"
+          className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded text-zinc-800"
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           placeholder="Username"
         />
         <input
-          className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4"
+          className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4 text-zinc-800"
           type="password"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
@@ -106,7 +107,7 @@ const Login = () => {
         </div>
         <div className="text-center md:text-left">
           <button
-            className="mt-4 bg-[#00DF9A] hover:bg-blue-700 px-4 py-2 uppercase rounded text-xs tracking-wider"
+            className="mt-4 bg-[#00DF9A] hover:bg-blue-700 px-4 py-2 uppercase rounded text-xs tracking-wider text-zinc-800"
             type="submit"
             onClick={handleLogin}
           >
@@ -116,12 +117,12 @@ const Login = () => {
         </div>
         <div className="mt-4 font-semibold text-sm text-slate-500 text-center md:text-left">
           Don&apos;t have an account?{" "}
-          <a
+          <Link
+            to="/SignUp"
             className="text-[#00DF9A] hover:underline hover:underline-offset-4 hover:text-blue-700"
-            href="/SignUp.jsx"
           >
             Register
-          </a>
+          </Link>
         </div>
       </div>
     </section>

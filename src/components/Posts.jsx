@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+// import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../Forum.css'; 
 import post from '../assets/post.jpeg';
 
