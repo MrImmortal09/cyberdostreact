@@ -7,7 +7,7 @@ import Sidebar from '../Sidebar';
 
 function Forum() {
   return (
-    <div>
+    <div className=''>
       {/* <Header /> */}
       <div id="main">
         <Trending />
