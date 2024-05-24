@@ -52,7 +52,7 @@ const SignUp = () => {
           <label className="mr-1">Sign up with</label>
           <button
             type="button"
-            className="mx-1 h-9 w-9  rounded-full hover:bg-blue-700 text-white shadow-[0_4px_9px_-4px_#00DF9A]"
+            className="mx-1 h-9 w-9 rounded-full hover:bg-blue-700 text-white shadow-[0_4px_9px_-4px_#00DF9A]"
           >
             <BiLogoFacebook
               size={20}

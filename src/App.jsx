@@ -4,7 +4,7 @@ import News from './components/pages/News';
 import Login from './components/pages/Login';
 import GovtMeasures from "./components/pages/GMeasures";
 import Forum from './components/pages/Forum';
-import Signup from './components/pages/SignUp';
+import SignUp from './components/pages/SignUp';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import ContactUs from './components/pages/ContactUs';
@@ -23,7 +23,7 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path="/GovtMeasures" element={<GovtMeasures />} />
 
-          <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/SignUp" element={<SignUp />} />
 
           
           <Route exact path="/ContactUs" element={<ContactUs />} />
