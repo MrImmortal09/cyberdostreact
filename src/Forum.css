@@ -139,6 +139,7 @@ header {
     border-radius: 8px;
 }
 
+
 .trend-title {
     font-size: 20px;
     font-weight: 700;
@@ -153,6 +154,7 @@ header {
 
 .trend-reddit .image {
     margin-right: 8px;
+    transform: scale(1.2);
 }
 
 #content {
@@ -455,6 +457,7 @@ header {
 }
 
 .growing-communities .buttons div {
+    flex-direction: column;
     background-color: #F6F7F8;
     color: #46D160;
     box-sizing: border-box;
@@ -468,27 +471,13 @@ header {
     background-color: rgb(231, 231, 231);
 }
 
-#trending_communities .side-element {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
 
-.community-info {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .side-element i {
     font-size: 35px;
     margin-right: 10px;
 }
 
-.community-join {
-    width: 30%;
-}
 
 #side_footer {
     display: flex;
