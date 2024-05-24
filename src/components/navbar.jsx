@@ -31,12 +31,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="search">
-          <a href="Login.html">
-            <button><Link to="/login">Login</Link>{/* Contact link */}</button>
-          </a>
-          <a href="Login.html">
-          <button><Link to="/signup">Signup</Link>{/* Contact link */}</button>
-          </a>
+        <Link to="/login"><button>Login{/* Contact link */}</button></Link>
+        <Link to="/SignUp"><button>Signup{/* Contact link */}</button></Link>
         </div>
       </div>
   );
